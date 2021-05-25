@@ -20,7 +20,7 @@ To get started, you should first get this file in your local machine by cloning 
 
 > git clone https://github.com/Ceejayski/weather-app
 
-> cd weather-app
+> cd Weather-App
 
 > npm install webpack webpack-cli --save-dev
 
