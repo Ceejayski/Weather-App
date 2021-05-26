@@ -1,3 +1,4 @@
+/* eslint class-methods-use-this: 0 */ // --> OFF
 import axios from 'axios';
 import Store from '../Storage/store';
 import UI from '../UI/ui';

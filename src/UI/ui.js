@@ -1,3 +1,6 @@
+/* eslint no-restricted-syntax: 0 */ // --> OFF
+/* eslint guard-for-in: 0 */ // --> OFF
+
 import moment from 'moment';
 
 export default class UI {

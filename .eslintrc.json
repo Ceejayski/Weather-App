@@ -11,13 +11,8 @@
   "extends": ["airbnb-base"],
   "rules": {
     "no-shadow": "off",
-    "guard-for-in": "off",
-    "no-restricted-syntax": "off",
     "no-param-reassign": "off",
-    "eol-last": "off",
-    "import/no-named-as-default": "off",
-    "import/no-named-as-default-member": "off",
-    "class-methods-use-this": "off"
+    "eol-last": "off"
   },
   "ignorePatterns": [
     "dist/",
