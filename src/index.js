@@ -3,7 +3,7 @@ import Store from './Storage/store';
 import Weather from './utils/weather';
 import Geofind from './utils/geocode';
 
-const geocode = new Geofind();
+const geocode = Geofind();
 const weatherStore = Store.getlocation();
 const weather = new Weather(weatherStore.latt, weatherStore.long);
 window.geolocate = () => {
