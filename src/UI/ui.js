@@ -169,7 +169,6 @@ export default class UI {
     }
     video.innerHTML = source.outerHTML
     video.load();
-    video.play();
     const day = moment.unix(data.current.dt).format('dddd');
     const city = data.timezone.split('/')[1].replace('_', ' ');
     const pop = Math.round(data.hourly[0].pop * 100);
