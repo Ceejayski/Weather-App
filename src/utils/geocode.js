@@ -11,6 +11,7 @@ export default class Geofind {
     weather.getWeather()
       .then((results) => {
         UI.displayWeather(results);
+        UI.backgroundCheck(results);
       })
       .catch((err) => UI.showAlert(err, 'alert-danger'));
   }
@@ -35,6 +36,24 @@ export default class Geofind {
         } else {
           UI.showAlert('Error', 'alert-danger');
         }
+      });
+  }
+
+  getPosition(options) {
+    return new Promise((resolve, reject) => {
+      navigator.geolocation.getCurrentPosition(resolve, reject, options);
+    });
+  }
+
+  getPositionCoord(weather) {
+    this.getPosition()
+      .then((position) => {
+        weather.changeLocation(position.coords.latitude, position.coords.longitude);
+        Store.setLocation(position.coords.latitude, position.coords.longitude);
+        this.getWeather(weather);
+      })
+      .catch((err) => {
+        UI.showAlert(err.message, 'alert-danger');
       });
   }
 }
