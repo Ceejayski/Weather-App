@@ -16,11 +16,15 @@ You can find the demo [here](https://nostalgic-shannon-fe1ff6.netlify.app)
 
 ## Setup
 
-To get started, you should first get this file in your local machine by cloning or forking this project or typing in your terminal
+In order to install this project please follow the next steps:
 
-> git clone https://github.com/Ceejayski/weather-app
+> Open the Terminal
 
-> cd Weather-App
+> Navigate to the directory where you want to add this repository
+
+> Run git clone HTTPhttps://github.com/Ceejayski/Weather-App.git
+
+> Run ````cd Weather-App
 
 > npm install webpack webpack-cli --save-dev
 
@@ -30,29 +34,9 @@ Just run the command below for webpack to compile the code.
 
 > npx webpack --watch
 
-## Contributing
+--------------------------------
 
-Contributions, issues and feature requests are welcome! Start by:
-
-Forking the project
-
-Cloning the project to your local machine
-
-cd into the project directory
-
-> cd Weather-app
-
-> Run git checkout -b your-branch-name
-
-Make your contributions
-
-Push your branch up to your forked repository
-
-Open a Pull Request with a detailed description to the development branch of the original project for a review
-
----
-
-Built With
+## Built With
 
 This project was built using these technologies.
 
