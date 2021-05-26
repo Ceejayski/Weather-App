@@ -179,8 +179,8 @@ export default class UI {
   data.current.temp,
 )} and with ${
   data.current.weather[0].description
-}  weather description, ${city}'s current Humidity is ${data.current.humidity}, a wind gust and speed of ${
-  data.current.wind_gust
+}  weather description, ${city}'s current Humidity is ${data.current.humidity} with a wind gust and speed of ${
+  data.current.wind_gust=== undefined ? 0 : data.current.wind_gust
 } and ${data.current.wind_speed} respectively and a ${pop}% chance of rain in the next hour.
       </p>
     `;
