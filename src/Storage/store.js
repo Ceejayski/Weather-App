@@ -13,8 +13,7 @@ export default class Store {
     } else {
       lon = localStorage.getItem('lon');
     }
-
-    return { latt: parseInt(lat, 10), long: parseInt(lon, 10) };
+    return { latt: parseFloat(lat), long: parseFloat(lon) };
   }
 
   static setLocation(lat, long) {

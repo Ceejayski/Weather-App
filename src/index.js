@@ -3,9 +3,12 @@ import Store from './Storage/store';
 import Weather from './utils/weather';
 import Geofind from './utils/geocode';
 
+const geocode = new Geofind();
 const weatherStore = Store.getlocation();
 const weather = new Weather(weatherStore.latt, weatherStore.long);
-const geocode = new Geofind();
+window.geolocate = () => {
+  geocode.getPositionCoord(weather);
+};
 
 document.addEventListener('DOMContentLoaded', geocode.getWeather(weather));
 
