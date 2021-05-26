@@ -167,7 +167,7 @@ export default class UI {
         type: 'video/mp4',
       });
     }
-    video.innerHTML = source.outerHTML
+    video.innerHTML = source.outerHTML;
     video.load();
     const day = moment.unix(data.current.dt).format('dddd');
     const city = data.timezone.split('/')[1].replace('_', ' ');
