@@ -22,7 +22,7 @@ In order to install this project please follow the next steps:
 
 > Navigate to the directory where you want to add this repository
 
-> Run git clone HTTPhttps://github.com/Ceejayski/Weather-App.git
+> Run git clone https://github.com/Ceejayski/Weather-App.git
 
 > Run ````cd Weather-App
 
