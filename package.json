@@ -1,0 +1,47 @@
+{
+  "name": "weather-app",
+  "version": "1.0.0",
+  "description": "Simple Weather app built with vanilla JavaScript",
+  "main": "index.js",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.2.2",
+    "babel-preset-latest": "^6.24.1",
+    "moment": "^2.29.1",
+    "node-geocoder": "^3.27.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "10.1.x",
+    "css-loader": "^5.2.1",
+    "eslint": "6.8.x",
+    "eslint-config-airbnb-base": "14.1.x",
+    "eslint-plugin-import": "2.20.x",
+    "node-sass": "^5.0.0",
+    "sass-loader": "^11.0.1",
+    "style-loader": "^2.0.0",
+    "stylelint": "13.3.x",
+    "stylelint-config-standard": "20.0.x",
+    "stylelint-csstree-validator": "^1.9.0",
+    "stylelint-scss": "3.17.x",
+    "webpack": "^5.37.1",
+    "webpack-cli": "^4.7.0",
+    "webpack-dev-server": "^3.11.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack serve --mode development --env development",
+    "build": "webpack --mode production",
+    "start": "webpack-dev-server --mode development --open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ceejayski/Weather-App.git"
+  },
+  "author": "Ceejayski",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ceejayski/Weather-App/issues"
+  },
+  "homepage": "https://github.com/Ceejayski/Weather-App#readme"
+}
